@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>San Creation — Advertising Agency</title>
+  <meta name="description" content="San Creation Advertising Agency — Strategy • Creative • Results" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">San Creation</a>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>We create memorable brands that drive growth</h1>
+        <p>Strategy, creative campaigns, and digital experiences for businesses that want to stand out.</p>
+        <p><a class="btn" href="#contact">Get a free consultation</a></p>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="grid services-grid">
+          <div class="card">
+            <h3>Brand Strategy</h3>
+            <p>Positioning, naming, voice and go-to-market plans that align with growth goals.</p>
+          </div>
+          <div class="card">
+            <h3>Creative Campaigns</h3>
+            <p>Integrated campaigns across digital, social, and traditional channels.</p>
+          </div>
+          <div class="card">
+            <h3>Digital & Web</h3>
+            <p>Websites, landing pages and digital products optimized for performance and conversions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section alt">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="grid portfolio-grid">
+          <div class="thumb">Project 1</div>
+          <div class="thumb">Project 2</div>
+          <div class="thumb">Project 3</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container narrow">
+        <h2>About San Creation</h2>
+        <p>We are a creative advertising agency focused on measurable results. Our team blends strategic insight with creative execution to help brands connect with their audience.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container narrow">
+        <h2>Contact</h2>
+        <p>Ready to start a project? Email us or use the contact form below.</p>
+        <form class="contact-form" action="mailto:hello@sancreation.example" method="post" enctype="text/plain">
+          <label>Name<input type="text" name="name" required /></label>
+          <label>Email<input type="email" name="email" required /></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <div><button class="btn" type="submit">Send</button></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> San Creation — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Small script for dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
